@@ -1,0 +1,549 @@
+[
+    {
+        "number": "6",
+        "name": "Charizard",
+        "species": "Flame",
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "abilities": {
+            "normal": [
+                "Blaze"
+            ],
+            "hidden": [
+                "Solar Power"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Dragon"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "5'07\"",
+        "weight": "199.5 lbs.",
+        "family": {
+            "id": 2,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Charmander",
+                "Charmeleon",
+                "Charizard"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/6.png",
+        "description": "It uses its wings to fly high. The temperature of its fire increases as it gains experience in battle."
+    },
+    {
+        "number": "6",
+        "name": "Mega Charizard X",
+        "species": "Flame",
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "abilities": {
+            "normal": [
+                "Blaze"
+            ],
+            "hidden": [
+                "Tough Claws"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Dragon"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "5'07\"",
+        "weight": "243.6 lbs.",
+        "family": {
+            "id": 2,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Charmander",
+                "Charmeleon",
+                "Charizard"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/6-mega-x.png",
+        "description": "It uses its wings to fly high. The temperature of its fire increases as it gains experience in battle."
+    },
+    {
+        "number": "6",
+        "name": "Mega Charizard Y",
+        "species": "Flame",
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "abilities": {
+            "normal": [
+                "Blaze"
+            ],
+            "hidden": [
+                "Drought"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Dragon"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "5'07\"",
+        "weight": "221.6 lbs.",
+        "family": {
+            "id": 2,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Charmander",
+                "Charmeleon",
+                "Charizard"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/6-mega-y.png",
+        "description": "It uses its wings to fly high. The temperature of its fire increases as it gains experience in battle."
+    },
+    {
+        "number": "25",
+        "name": "Pikachu",
+        "species": "Mouse",
+        "types": [
+            "Electric"
+        ],
+        "abilities": {
+            "normal": [
+                "Static"
+            ],
+            "hidden": [
+                "Lightning Rod"
+            ]
+        },
+        "eggGroups": [
+            "Field",
+            "Fairy"
+        ],
+        "gender": [
+            50,
+            50
+        ],
+        "height": "1'04\"",
+        "weight": "13.2 lbs.",
+        "family": {
+            "id": 10,
+            "evolutionStage": 2,
+            "evolutionLine": [
+                "Pichu",
+                "Pikachu",
+                "Raichu"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/25.png",
+        "description": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks."
+    },
+    {
+        "number": "3",
+        "name": "Venusaur",
+        "species": "Seed",
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "abilities": {
+            "normal": [
+                "Overgrow"
+            ],
+            "hidden": [
+                "Chlorophyll"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Grass"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "6'07\"",
+        "weight": "220.5 lbs.",
+        "family": {
+            "id": 1,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Bulbasaur",
+                "Ivysaur",
+                "Venusaur"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/3.png",
+        "description": "As it warms itself and absorbs the sunlight, its flower petals release a pleasant fragrance."
+    },
+    {
+        "number": "3",
+        "name": "Mega Venusaur",
+        "species": "Seed",
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "abilities": {
+            "normal": [
+                "Overgrow"
+            ],
+            "hidden": [
+                "Thick Fat"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Grass"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "7'10\"",
+        "weight": "342.8 lbs.",
+        "family": {
+            "id": 1,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Bulbasaur",
+                "Ivysaur",
+                "Venusaur"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/3-mega.png",
+        "description": "As it warms itself and absorbs the sunlight, its flower petals release a pleasant fragrance."
+    },
+    {
+        "number": "15",
+        "name": "Beedrill",
+        "species": "Poison Bee",
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "abilities": {
+            "normal": [
+                "Swarm"
+            ],
+            "hidden": [
+                "Sniper"
+            ]
+        },
+        "eggGroups": [
+            "Bug"
+        ],
+        "gender": [
+            50,
+            50
+        ],
+        "height": "3'03\"",
+        "weight": "65 lbs.",
+        "family": {
+            "id": 5,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Weedle",
+                "Kakuna",
+                "Beedrill"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/15.png",
+        "description": "It uses sharp, poisonous stings to defeat prey, then takes the victim back to its nest for food."
+    },
+    {
+        "number": "15",
+        "name": "Mega Beedrill",
+        "species": "Poison Bee",
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "abilities": {
+            "normal": [
+                "Swarm"
+            ],
+            "hidden": [
+                "Adaptability"
+            ]
+        },
+        "eggGroups": [
+            "Bug"
+        ],
+        "gender": [
+            50,
+            50
+        ],
+        "height": "4'07\"",
+        "weight": "89.3 lbs.",
+        "family": {
+            "id": 5,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Weedle",
+                "Kakuna",
+                "Beedrill"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/15-mega.png",
+        "description": "It uses sharp, poisonous stings to defeat prey, then takes the victim back to its nest for food."
+    },
+    {
+        "number": "9",
+        "name": "Blastoise",
+        "species": "Shellfish",
+        "types": [
+            "Water"
+        ],
+        "abilities": {
+            "normal": [
+                "Torrent"
+            ],
+            "hidden": [
+                "Rain Dish"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Water 1"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "5'03\"",
+        "weight": "188.5 lbs.",
+        "family": {
+            "id": 3,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Squirtle",
+                "Wartortle",
+                "Blastoise"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/9.png",
+        "description": "It firmly plants its feet on the ground before shooting water from the jets on its back."
+    },
+    {
+        "number": "9",
+        "name": "Mega Blastoise",
+        "species": "Shellfish",
+        "types": [
+            "Water"
+        ],
+        "abilities": {
+            "normal": [
+                "Torrent"
+            ],
+            "hidden": [
+                "Mega Launcher"
+            ]
+        },
+        "eggGroups": [
+            "Monster",
+            "Water 1"
+        ],
+        "gender": [
+            87.5,
+            12.5
+        ],
+        "height": "5'03\"",
+        "weight": "222.9 lbs.",
+        "family": {
+            "id": 3,
+            "evolutionStage": 3,
+            "evolutionLine": [
+                "Squirtle",
+                "Wartortle",
+                "Blastoise"
+            ]
+        },
+        "starter": false,
+        "legendary": false,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/9-mega.png",
+        "description": "It firmly plants its feet on the ground before shooting water from the jets on its back."
+    },
+    {
+        "number": "150",
+        "name": "Mewtwo",
+        "species": "Genetic",
+        "types": [
+            "Psychic"
+        ],
+        "abilities": {
+            "normal": [
+                "Pressure"
+            ],
+            "hidden": [
+                "Unnerve"
+            ]
+        },
+        "eggGroups": [
+            "Undiscovered"
+        ],
+        "gender": [],
+        "height": "6'07\"",
+        "weight": "269 lbs.",
+        "family": {
+            "id": 77,
+            "evolutionStage": 1,
+            "evolutionLine": [
+                "Mewtwo"
+            ]
+        },
+        "starter": false,
+        "legendary": true,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": false,
+        "gen": 1,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/150.png",
+        "description": "Said to rest quietly in an undiscovered cave, this POKéMON was created solely for battling."
+    },
+    {
+        "number": "150",
+        "name": "Mega Mewtwo X",
+        "species": "Genetic",
+        "types": [
+            "Psychic",
+            "Fighting"
+        ],
+        "abilities": {
+            "normal": [
+                "Steadfast"
+            ],
+            "hidden": [
+                "Unnerve"
+            ]
+        },
+        "eggGroups": [
+            "Undiscovered"
+        ],
+        "gender": [],
+        "height": "7'07\"",
+        "weight": "280 lbs.",
+        "family": {
+            "id": 77,
+            "evolutionStage": 1,
+            "evolutionLine": [
+                "Mewtwo"
+            ]
+        },
+        "starter": false,
+        "legendary": true,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/150-mega-x.png",
+        "description": "Said to rest quietly in an undiscovered cave, this POKéMON was created solely for battling."
+    },
+    {
+        "number": "150",
+        "name": "Mega Mewtwo Y",
+        "species": "Genetic",
+        "types": [
+            "Psychic"
+        ],
+        "abilities": {
+            "normal": [
+                "Insomnia"
+            ],
+            "hidden": [
+                "Unnerve"
+            ]
+        },
+        "eggGroups": [
+            "Undiscovered"
+        ],
+        "gender": [],
+        "height": "4'11\"",
+        "weight": "72.8 lbs.",
+        "family": {
+            "id": 77,
+            "evolutionStage": 1,
+            "evolutionLine": [
+                "Mewtwo"
+            ]
+        },
+        "starter": false,
+        "legendary": true,
+        "mythical": false,
+        "ultraBeast": false,
+        "mega": true,
+        "gen": 6,
+        "sprite": "https://cdn.traction.one/pokedex/pokemon/150-mega-y.png",
+        "description": "Said to rest quietly in an undiscovered cave, this POKéMON was created solely for battling."
+    }
+]
