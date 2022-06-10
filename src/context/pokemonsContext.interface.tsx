@@ -10,7 +10,11 @@ export interface InterPokemonContext {
   pokemon: PokeType;
   pokemonsList: Array<PokemonList>;
   setAbrirModal(valor: boolean): void;
-  getPokemon(dados: string): Promise<void>;
+  getPokemonDefault(dados: string): Promise<void>;
+  getPokemonNext(): Promise<void>;
+  getPokemonPrevius(): Promise<void>;
+  getPokemonFirstPage(): Promise<void>;
+  getPokemonlastPage(): Promise<void>;
 }
 
 export interface InterProviderProps {
@@ -37,7 +41,6 @@ export interface PokeType {
   types: Array<PokemonType>;
   past_types?: any;
 }
-
 
 export interface SimpleType {
   name: string;

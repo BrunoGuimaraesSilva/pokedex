@@ -1,20 +1,11 @@
-import { ReactNode } from "react";
-import {
-  Box,
-  Center,
-  useColorModeValue,
-  Heading,
-  Text,
-  Stack,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Center, Heading, Stack, Image } from "@chakra-ui/react";
 import { CardInterfaceProps } from "./card.interface";
 
 export const Card: React.FC<CardInterfaceProps> = ({ image, name }) => {
   return (
     <>
       <Box>
-        <Center >
+        <Center>
           <Box
             role={"group"}
             p={6}
@@ -27,12 +18,7 @@ export const Card: React.FC<CardInterfaceProps> = ({ image, name }) => {
             zIndex={1}
           >
             <Box rounded={"lg"} pos={"relative"} height={"230px"}>
-              <Image
-
-                height={230}
-                width={282}
-                src={image}
-              />
+              <Image alt="" height={230} width={282} src={image} />
             </Box>
             <Stack pt={10} align={"center"}>
               <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>

@@ -24,7 +24,7 @@ export function Footer() {
           }}
         >
           <Box w="130px">
-            <Image src={pokemon_logo} />
+            <Image alt="" src={pokemon_logo} />
           </Box>
         </Flex>
         <Text pt={3} fontSize={"sm"} textAlign={"center"}>

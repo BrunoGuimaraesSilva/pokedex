@@ -2,7 +2,6 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   useDisclosure,
@@ -38,7 +37,7 @@ export function Header() {
           />
           <HStack spacing={8} alignItems={"center"}>
             <Box w="130px">
-              <Image src={pokemon_logo} />
+              <Image alt="" src={pokemon_logo} />
             </Box>
             <HStack
               as={"nav"}
@@ -47,6 +46,7 @@ export function Header() {
             >
               {Links.map(({link,nome}) => (
                 <Link
+                key=''
                 px={2}
                 py={1}
                 rounded={"md"}
@@ -80,6 +80,7 @@ export function Header() {
             <Stack as={"nav"} spacing={4}>
               {Links.map(({nome,link}) => (
                 <Link
+                key={''}
                 px={2}
                 py={1}
                 rounded={"md"}

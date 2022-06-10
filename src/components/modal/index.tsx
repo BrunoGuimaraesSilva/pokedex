@@ -7,29 +7,14 @@ import {
   ModalBody,
   ModalCloseButton,
   ModalContent,
-  ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Progress,
   Stack,
-  Table,
-  TableCaption,
-  TableContainer,
-  Tbody,
-  Td,
-  Text,
-  Tfoot,
-  Th,
-  Thead,
-  Tr,
-  useDisclosure,
+  Text
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { useContext } from "react";
-import { PokemonContext } from "../../context";
 import { capitalize } from "../../utils";
 import { GBadge, GBadgeType } from "../badge";
-import { GButton } from "../button";
 import { ModalInterfaceProps } from "./modal.interface";
 
 export const GModal: React.FC<ModalInterfaceProps> = ({
@@ -47,6 +32,7 @@ export const GModal: React.FC<ModalInterfaceProps> = ({
           <Image
             height={200}
             width={282}
+            alt=''
             objectFit={"scale-down"}
             src={`https://cdn.traction.one/pokedex/pokemon/${pokeData.id}.png`}
           />
@@ -71,7 +57,7 @@ export const GModal: React.FC<ModalInterfaceProps> = ({
             </Stack>
             {pokeData.stats.map((data, index) => {
               return (
-                <Box>
+                <Box key={index}>
                   <Divider />
                     <Text fontSize={"xl"}>
                       {capitalize(data.stat.name) + ": " + data.base_stat}
