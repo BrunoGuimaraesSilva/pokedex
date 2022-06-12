@@ -6,11 +6,19 @@ export interface PokemonList {
   id: string;
 }
 
+export interface PokemonSearchList {
+  value: string;
+  label: string;
+  id: string;
+}
+
 export interface InterPokemonContext {
   pokemon: PokeType;
   pokemonsList: Array<PokemonList>;
-  setAbrirModal(valor: boolean): void;
+  pokemonsSearchList: Array<PokemonSearchList>;  
+  setPokemon(valor: PokeType): void;
   getPokemonDefault(dados: string): Promise<void>;
+  getPokemonSearchList(): Promise<void>;
   getPokemonNext(): Promise<void>;
   getPokemonPrevius(): Promise<void>;
   getPokemonFirstPage(): Promise<void>;

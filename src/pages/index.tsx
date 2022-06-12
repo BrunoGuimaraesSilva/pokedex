@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { Header, Card, Footer } from "../components";
 import { PokemonContext } from "../context";
-import { GModal } from "../components";
+import { PokemonModal } from "../components";
 import { capitalize } from "../utils";
 import {
   ArrowLeftIcon,
@@ -21,24 +21,32 @@ import {
 } from "@chakra-ui/icons";
 
 export default function Pokedex() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
   const {
-    pokemonsList,
+    isOpen: isOpenPokemonModal,
+    onOpen: onOpenPokemonModal,
+    onClose: onClosePokemonModal,
+  } = useDisclosure();
+
+  const {
     getPokemonDefault,
     getPokemonNext,
     getPokemonPrevius,
     getPokemonFirstPage,
     getPokemonlastPage,
+    getPokemonSearchList,
+    pokemonsSearchList,
+    pokemonsList,
     pokemon,
   } = useContext(PokemonContext);
 
+  
   return (
     <>
-      <GModal
+      <PokemonModal
         pokeData={pokemon}
-        isOpenModal={isOpen}
-        onCloseModal={onClose}
-        onOpenModal={onOpen}
+        isOpenModal={isOpenPokemonModal}
+        onOpenModal={onOpenPokemonModal}
+        onCloseModal={onClosePokemonModal}
       />
       <Header key={1} />
       <Wrap justify="center">
@@ -48,7 +56,7 @@ export default function Pokedex() {
               <Box
                 cursor={"pointer"}
                 onClick={() => {
-                  onOpen(), getPokemonDefault(data.id);
+                  onOpenPokemonModal(), getPokemonDefault(data.id);
                 }}
               >
                 <Card

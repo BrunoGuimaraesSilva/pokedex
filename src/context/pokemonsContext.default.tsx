@@ -29,7 +29,7 @@ export const pokemonDefault: PokeType = {
   ],
   height: 1,
   held_items: [],
-  id: 1,
+  id: 0,
   is_default: true,
   location_area_encounters: "",
   moves: [

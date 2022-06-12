@@ -1,12 +1,14 @@
 import { useRouter } from "next/router";
-import { createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import api from "../service/api";
+import {capitalize} from "../utils"
 import { pokemonDefault } from "./pokemonsContext.default";
 import {
   PokeType,
   InterPokemonContext,
   InterProviderProps,
   PokemonList,
+  PokemonSearchList,
 } from "./pokemonsContext.interface";
 
 export const PokemonContext = createContext({} as InterPokemonContext);
@@ -17,6 +19,9 @@ export function PokemonsProvider({ children }: InterProviderProps) {
   const [nextLink, setNextLink] = useState<string>("");
   const [previousLink, setPreviousLink] = useState<string>("");
   const [pokemonsList, setPokemonList] = useState<Array<PokemonList>>([]);
+  const [pokemonsSearchList, setPokemonSearchList] = useState<
+    Array<PokemonSearchList>
+  >([]);
   const [abrirModal, setAbrirModal] = useState<boolean>(false);
 
   useEffect(() => {
@@ -30,6 +35,7 @@ export function PokemonsProvider({ children }: InterProviderProps) {
       });
       setPokemonList(arrayPokemons);
     });
+    getPokemonSearchList()
   }, []);
 
   async function getPokemonFirstPage() {
@@ -58,14 +64,6 @@ export function PokemonsProvider({ children }: InterProviderProps) {
           arrayPokemons.push(array);
         });
         setPokemonList(arrayPokemons);
-      });
-    } catch (error) {}
-  }
-
-  async function getPokemonDefault(dados: string) {
-    try {
-      api.get(`/pokemon/${dados}`).then((res) => {
-        setPokemon(res.data);
       });
     } catch (error) {}
   }
@@ -102,15 +100,39 @@ export function PokemonsProvider({ children }: InterProviderProps) {
     } catch (error) {}
   }
 
+  async function getPokemonDefault(dados: string) {
+    try {
+      api.get(`/pokemon/${dados}`).then((res) => {
+        setPokemon(res.data);
+      });
+    } catch (error) {}
+  }
+
+  async function getPokemonSearchList() {
+    try {
+      api.get(`/pokemon?limit=890`).then((res) => {
+        const arrayPokemonsSearch: Array<PokemonSearchList> = [];
+
+        res.data.results.forEach((element: PokemonList) => {
+          const array = { value:element.name, label:capitalize(element.name), id: element.url.split("/")[6] };
+          arrayPokemonsSearch.push(array);
+        });
+        setPokemonSearchList(arrayPokemonsSearch);
+      });
+    } catch (error) {}
+  }
+
   return (
     <PokemonContext.Provider
       value={{
+        getPokemonSearchList,
         getPokemonDefault,
         getPokemonNext,
         getPokemonPrevius,
-        setAbrirModal,
+        setPokemon,
         getPokemonFirstPage,
         getPokemonlastPage,
+        pokemonsSearchList,
         pokemonsList,
         pokemon,
       }}
