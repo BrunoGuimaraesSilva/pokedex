@@ -12,7 +12,7 @@ yarn dev
 ```
 
 ## Visualizar
-![image](https://user-images.githubusercontent.com/48717444/173137832-819a6a4c-24ff-4f09-8a58-70701a927233.png)
+![image](https://user-images.githubusercontent.com/48717444/173210878-4b0fe9ad-a051-400a-96a3-624255a0116b.png)
 
 Homolog: https://pokedex-brunoguimaraessilva.vercel.app/
 
