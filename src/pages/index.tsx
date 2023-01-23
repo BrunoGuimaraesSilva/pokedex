@@ -10,7 +10,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import { Header, Card, Footer } from "../components";
-import { PokemonContext } from "../context";
+import { PokemonContext, PokemonList } from "../context";
 import { PokemonModal } from "../components";
 import { capitalize } from "../utils";
 import {
@@ -50,7 +50,7 @@ export default function Pokedex() {
       />
       <Header key={1} />
       <Wrap justify="center">
-        {pokemonsList.map((data) => {
+        {pokemonsList.map((data: PokemonList) => {
           return (
             <WrapItem p={4} id={data.id} key={data.id}>
               <Box
@@ -61,7 +61,7 @@ export default function Pokedex() {
               >
                 <Card
                   key={data.id}
-                  image={`https://cdn.traction.one/pokedex/pokemon/${data.id}.png`}
+                  image={`https://img.pokemondb.net/artwork/large/${data.name}.jpg`}
                   name={capitalize(data.name)}
                 />
               </Box>

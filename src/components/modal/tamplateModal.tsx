@@ -23,7 +23,7 @@ export const TamplateModal: React.FC<TamplateModalInterfaceProps> = ({
         width={282}
         alt=""
         objectFit={"scale-down"}
-        src={`https://cdn.traction.one/pokedex/pokemon/${pokeData.id}.png`}
+        src={`https://img.pokemondb.net/artwork/large/${pokeData.name}.jpg`}
       />
       <ModalBody>
         <Text fontSize="xl">Height: {pokeData.height}</Text>
